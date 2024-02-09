@@ -10,7 +10,7 @@ import pandas as pd
 import plotly.express as px
 
 #Grab Data
-df = pd.read_csv('StockData/AAPL.csv', parse_dates=['Date'], index_col=['Date'])
+df = pd.read_csv('AAPL.csv', parse_dates=['Date'], index_col=['Date'])
 
 #create charts
 fig = px.line(df, y='Adj Close')
